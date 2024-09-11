@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:home_service/view/Widget/dialog_enterOpt.dart';
+import 'package:home_service/view/constant.dart';
 
 class Dialog_verify extends StatelessWidget {
   const Dialog_verify({
@@ -41,16 +42,15 @@ class Dialog_verify extends StatelessWidget {
                 },
                 child: Text(
                   "Cancel",
-                  style:
-                      TextStyle(color: const Color.fromARGB(224, 0, 47, 255)),
+                  style: TextStyle(color: Color(hexColor('#0474ED'))),
                 ),
                 shape: RoundedRectangleBorder(
-                    side: const BorderSide(
-                        width: 1, color: const Color.fromARGB(224, 0, 47, 255)),
+                    side:
+                        BorderSide(width: 1, color: Color(hexColor('#0474ED'))),
                     borderRadius: BorderRadius.circular(10)),
               ),
               MaterialButton(
-                  color: const Color.fromARGB(224, 0, 47, 255),
+                  color: Color(hexColor('#0474ED')),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   onPressed: () {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_service/view/constant.dart';
 
 class CostumButton extends StatelessWidget {
   const CostumButton({super.key, required this.text, required this.onpressed});
@@ -16,6 +17,6 @@ class CostumButton extends StatelessWidget {
           text,
           style: const TextStyle(color: Colors.white, fontSize: 16),
         ),
-        color: const Color.fromARGB(224, 0, 47, 255));
+        color: Color(hexColor('#0474ED')));
   }
 }

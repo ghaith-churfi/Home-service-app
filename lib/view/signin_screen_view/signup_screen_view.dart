@@ -5,6 +5,7 @@ import 'package:home_service/view/Widget/costum_Button.dart';
 import 'package:home_service/view/Widget/costum_TextFieldnormal.dart';
 import 'package:home_service/view/Widget/costum_textField_password.dart';
 import 'package:home_service/view/Widget/dialog_verify.dart';
+import 'package:home_service/view/constant.dart';
 
 class SignupScreenView extends StatelessWidget {
   const SignupScreenView({super.key});
@@ -82,9 +83,8 @@ class SignupScreenView extends StatelessWidget {
                       Get.back();
                       FocusScope.of(context).unfocus();
                     },
-                    child: const Text("Login",
-                        style: TextStyle(
-                            color: Color.fromARGB(223, 60, 92, 235)))),
+                    child: Text("Login",
+                        style: TextStyle(color: Color(hexColor('#0474ED'))))),
                 const SizedBox(
                   height: 10,
                 ),

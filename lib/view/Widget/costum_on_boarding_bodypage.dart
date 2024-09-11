@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:home_service/view/Widget/costum_Button.dart';
+import 'package:home_service/view/constant.dart';
 import 'package:home_service/view/login_screen_view/login_screen_view.dart';
 
 class OnBoardingCotsumBodypage extends StatelessWidget {
@@ -51,7 +52,7 @@ class OnBoardingCotsumBodypage extends StatelessWidget {
                     },
                     child: Text(
                       skipButton!,
-                      style: TextStyle(color: Color.fromARGB(223, 60, 92, 235)),
+                      style: TextStyle(color: Color(hexColor('#0474ED'))),
                     )))
             : Text(""),
         Positioned(

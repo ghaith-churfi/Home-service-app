@@ -4,6 +4,7 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:home_service/view/Widget/costum_Button.dart';
 import 'package:home_service/view/Widget/dialog_createdSuccessfully.dart';
 import 'package:home_service/view/Widget/pincodetextfield.dart';
+import 'package:home_service/view/constant.dart';
 
 class Dialog_Enteropt extends StatelessWidget {
   const Dialog_Enteropt({super.key});
@@ -47,8 +48,12 @@ class Dialog_Enteropt extends StatelessWidget {
             children: [
               Expanded(child: Text("Didn't receive the code?")),
               Expanded(
-                  child:
-                      TextButton(onPressed: () {}, child: Text("Resend (30s)")))
+                  child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Resend (30s)",
+                        style: TextStyle(color: Color(hexColor('#0474ED'))),
+                      )))
             ],
           )
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_service/view/constant.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class PincodeTextField extends StatelessWidget {
@@ -16,7 +17,7 @@ class PincodeTextField extends StatelessWidget {
       autoFocus: true,
       autoDismissKeyboard: true,
       pinTheme: PinTheme(
-          selectedColor: const Color.fromARGB(224, 0, 47, 255),
+          selectedColor: Color(hexColor('#0474ED')),
           inactiveColor: Colors.black.withOpacity(.1),
           activeColor: Colors.black.withOpacity(.1),
           shape: PinCodeFieldShape.box,
