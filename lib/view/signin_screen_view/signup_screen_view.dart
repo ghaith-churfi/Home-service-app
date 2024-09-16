@@ -21,7 +21,7 @@ class SignupScreenView extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            Container(
+            SizedBox(
               width: 200,
               height: 60,
               child: Image.asset(
@@ -70,7 +70,7 @@ class SignupScreenView extends StatelessWidget {
                 showDialog(
                     context: context,
                     builder: (BuildContext context) {
-                      return Dialog_verify();
+                      return const Dialog_verify();
                     });
               },
             ),

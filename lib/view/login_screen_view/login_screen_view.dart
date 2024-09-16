@@ -22,7 +22,7 @@ class LoginScreenView extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            Container(
+            SizedBox(
               width: 200,
               height: 60,
               child: Image.asset(
@@ -95,7 +95,7 @@ class LoginScreenView extends StatelessWidget {
                 const Text("Didn't have an account?"),
                 TextButton(
                     onPressed: () {
-                      Get.to(() => SignupScreenView(),
+                      Get.to(() => const SignupScreenView(),
                           transition: Transition.downToUp);
                       FocusScope.of(context).unfocus();
                     },

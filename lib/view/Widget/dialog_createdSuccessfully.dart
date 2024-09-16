@@ -8,11 +8,13 @@ class DialogCreatedsuccessfuly extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 20),
       scrollable: true,
       content: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Circle_successfuly(),
-          SizedBox(
+          const Circle_successfuly(),
+          const SizedBox(
             height: 20,
           ),
           Text(
@@ -20,12 +22,12 @@ class DialogCreatedsuccessfuly extends StatelessWidget {
             "Account Created\nSuccessfully",
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodySmall,
               "Your account created successfully.\nListen your favourite music"),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           CostumButton(text: 'Back to Home', onpressed: () {})
         ],
       ),

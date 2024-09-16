@@ -13,6 +13,7 @@ class Dialog_Enteropt extends StatelessWidget {
   Widget build(BuildContext context) {
     // var width = MediaQuery.of(context).size.width;
     return AlertDialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 20),
       scrollable: true,
       content: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -21,17 +22,17 @@ class Dialog_Enteropt extends StatelessWidget {
             "Enter OTP",
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Container(
               child: Text(
             "A verification codes has been\nsent to 5467567",
             style: Theme.of(context).textTheme.bodySmall,
             textAlign: TextAlign.center,
           )),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          PincodeTextField(),
+          const PincodeTextField(),
           CostumButton(
               text: 'Verify',
               onpressed: () {
@@ -39,14 +40,14 @@ class Dialog_Enteropt extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (context) {
-                    return DialogCreatedsuccessfuly();
+                    return const DialogCreatedsuccessfuly();
                   },
                 );
               }),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Row(
             children: [
-              Expanded(child: Text("Didn't receive the code?")),
+              const Expanded(child: Text("Didn't receive the code?")),
               Expanded(
                   child: TextButton(
                       onPressed: () {},

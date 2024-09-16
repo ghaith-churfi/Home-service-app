@@ -12,16 +12,22 @@ class Dialog_verify extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 20),
+      contentPadding: const EdgeInsets.symmetric(vertical: 30, horizontal: 30),
       alignment: AlignmentDirectional.center,
       scrollable: true,
       content: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 10),
           const Text(
             "Verify Your Email Address",
+            style: TextStyle(
+                fontSize: 18,
+                inherit: false,
+                color: Colors.black,
+                fontWeight: FontWeight.w400),
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 10),
           Text(
             "5467567",
             style: Theme.of(context).textTheme.bodyLarge,
@@ -34,37 +40,52 @@ class Dialog_verify extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              MaterialButton(
-                onPressed: () {
-                  Get.back();
-                },
-                child: Text(
-                  "Cancel",
-                  style: TextStyle(color: Color(hexColor('#0474ED'))),
-                ),
-                shape: RoundedRectangleBorder(
-                    side:
-                        BorderSide(width: 1, color: Color(hexColor('#0474ED'))),
-                    borderRadius: BorderRadius.circular(10)),
-              ),
-              MaterialButton(
-                  color: Color(hexColor('#0474ED')),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+              Expanded(
+                child: MaterialButton(
+                  minWidth: 20,
+                  height: 50,
                   onPressed: () {
                     Get.back();
-                    showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return Dialog_Enteropt();
-                        });
                   },
-                  child: const Text(
-                    "Next",
-                    style: TextStyle(color: Colors.white),
-                  )),
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                          width: 1, color: Color(hexColor('#0474ED'))),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Text(
+                    "Cancel",
+                    style: TextStyle(
+                        color: Color(
+                          hexColor('#0474ED'),
+                        ),
+                        inherit: false),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: MaterialButton(
+                    minWidth: 20,
+                    height: 50,
+                    color: Color(hexColor('#0474ED')),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    onPressed: () {
+                      Get.back();
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const Dialog_Enteropt();
+                          });
+                    },
+                    child: const Text(
+                      "Next",
+                      style: TextStyle(color: Colors.white, inherit: false),
+                    )),
+              ),
             ],
           )
         ],

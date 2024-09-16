@@ -7,11 +7,11 @@ import 'package:home_service/view/Widget/costum_on_boarding_bodypage.dart';
 // ignore: must_be_immutable
 class OnBoardingView extends StatelessWidget {
   OnBoardingView({super.key});
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
   @override
   Widget build(BuildContext context) {
     return PageView(
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       controller: _controller,
       scrollDirection: Axis.horizontal,
       children: [
@@ -46,9 +46,9 @@ class OnBoardingView extends StatelessWidget {
             subtitle:
                 "Lorem ipsum dolor sit amet, consectetur\n adipiscing elit. Fringilla in sed risus sit.",
             onPressed: () {
-              Get.offAll(() => LoginScreenView(),
+              Get.offAll(() => const LoginScreenView(),
                   transition: Transition.rightToLeft,
-                  duration: Duration(seconds: 1));
+                  duration: const Duration(seconds: 1));
             },
             textButton: 'Get Started')
       ],

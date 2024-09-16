@@ -23,12 +23,12 @@ class CostumLoginWith extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(icon),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Text(
                 "Login with $browser",
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               )
             ],
           )),

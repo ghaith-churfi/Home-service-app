@@ -6,7 +6,7 @@ import 'package:home_service/view/constant.dart';
 import 'package:home_service/view/login_screen_view/login_screen_view.dart';
 
 class OnBoardingCotsumBodypage extends StatelessWidget {
-  OnBoardingCotsumBodypage(
+  const OnBoardingCotsumBodypage(
       {super.key,
       required this.title,
       required this.subtitle,
@@ -46,15 +46,15 @@ class OnBoardingCotsumBodypage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30)),
                     color: Colors.white.withOpacity(.67),
                     onPressed: () {
-                      Get.offAll(() => LoginScreenView(),
+                      Get.offAll(() => const LoginScreenView(),
                           transition: Transition.rightToLeft,
-                          duration: Duration(seconds: 1));
+                          duration: const Duration(seconds: 1));
                     },
                     child: Text(
                       skipButton!,
                       style: TextStyle(color: Color(hexColor('#0474ED'))),
                     )))
-            : Text(""),
+            : const Text(""),
         Positioned(
             bottom: 0,
             child: Container(
@@ -66,16 +66,16 @@ class OnBoardingCotsumBodypage extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
                     subtitle,
-                    style: TextStyle(fontSize: 14),
+                    style: const TextStyle(fontSize: 14),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   CostumButton(text: textButton, onpressed: onPressed)
