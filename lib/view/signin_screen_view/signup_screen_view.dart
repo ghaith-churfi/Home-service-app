@@ -84,7 +84,7 @@ class SignupScreenView extends StatelessWidget {
                       FocusScope.of(context).unfocus();
                     },
                     child: Text("Login",
-                        style: TextStyle(color: Color(hexColor('#0474ED'))))),
+                        style: TextStyle(color: Color(Constant.primaryColor)))),
                 const SizedBox(
                   height: 10,
                 ),

@@ -46,15 +46,15 @@ class Dialog_Enteropt extends StatelessWidget {
               }),
           const SizedBox(height: 10),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Expanded(child: Text("Didn't receive the code?")),
-              Expanded(
-                  child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Resend (30s)",
-                        style: TextStyle(color: Color(hexColor('#0474ED'))),
-                      )))
+              Container(child: const Text("Didn't receive the code?")),
+              InkWell(
+                  onTap: () {},
+                  child: Text(
+                    "Resend (30s)",
+                    style: TextStyle(color: Color(Constant.primaryColor)),
+                  ))
             ],
           )
         ],

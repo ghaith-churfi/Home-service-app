@@ -52,7 +52,7 @@ class OnBoardingCotsumBodypage extends StatelessWidget {
                     },
                     child: Text(
                       skipButton!,
-                      style: TextStyle(color: Color(hexColor('#0474ED'))),
+                      style: TextStyle(color: Color(Constant.primaryColor)),
                     )))
             : const Text(""),
         Positioned(

@@ -51,7 +51,7 @@ class Dialog_verify extends StatelessWidget {
                   },
                   shape: RoundedRectangleBorder(
                       side: BorderSide(
-                          width: 1, color: Color(hexColor('#0474ED'))),
+                          width: 1, color: Color(Constant.primaryColor)),
                       borderRadius: BorderRadius.circular(10)),
                   child: Text(
                     "Cancel",
@@ -70,7 +70,7 @@ class Dialog_verify extends StatelessWidget {
                 child: MaterialButton(
                     minWidth: 20,
                     height: 50,
-                    color: Color(hexColor('#0474ED')),
+                    color: Color(Constant.primaryColor),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     onPressed: () {

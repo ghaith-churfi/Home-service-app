@@ -13,7 +13,7 @@ class CostumButton extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         minWidth: 335,
         height: 56,
-        color: Color(hexColor('#0474ED')),
+        color: Color(Constant.primaryColor),
         child: Text(
           text,
           style: const TextStyle(

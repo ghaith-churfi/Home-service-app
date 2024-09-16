@@ -17,7 +17,7 @@ class PincodeTextField extends StatelessWidget {
       autoFocus: true,
       autoDismissKeyboard: true,
       pinTheme: PinTheme(
-          selectedColor: Color(hexColor('#0474ED')),
+          selectedColor: Color(Constant.primaryColor),
           inactiveColor: Colors.black.withOpacity(.1),
           activeColor: Colors.black.withOpacity(.1),
           shape: PinCodeFieldShape.box,

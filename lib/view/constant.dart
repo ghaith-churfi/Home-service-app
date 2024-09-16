@@ -1,4 +1,6 @@
-class Constant {}
+class Constant {
+  static var primaryColor = hexColor('#0474ED');
+}
 
 int hexColor(String color) {
   String newColor = "0xff$color";
