@@ -1,10 +1,9 @@
-import 'package:example/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:home_service/config/theme/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'theme_event.dart';
 import 'theme_state.dart';
-
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
   ThemeBloc({required bool initialTheme})
@@ -40,4 +39,3 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
     }
   }
 }
-

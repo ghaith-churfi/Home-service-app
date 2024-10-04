@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+const textTheme = 'Lexend';
+
 class AppTheme {
   static final lightTheme = ThemeData(
+    fontFamily: textTheme,
     brightness: Brightness.light,
     primaryColor: Colors.blue, // Button color
     scaffoldBackgroundColor: Colors.white, // Background color
@@ -50,6 +53,7 @@ class AppTheme {
   );
 
   static final darkTheme = ThemeData(
+    fontFamily: textTheme,
     brightness: Brightness.dark,
     primaryColor: Colors.blue, // Button color
     scaffoldBackgroundColor: Colors.black, // Background color
